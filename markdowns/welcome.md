@@ -27,7 +27,6 @@ Let's consider operation `(6 + 2) x 3 - 1 x (5 x 4)`. Result is 4.
 * Evaluation of block `8 x 3`
 * Evaluation of block `1 x 20` **prior to subtraction**
 * Evaluation of block `24 - 20`
-* The second block is `6 x 2`
 
 The notation is easy to understand, but it's evaluation is less easy to implement : we need to find the priority between blocks, operators, ...
 
