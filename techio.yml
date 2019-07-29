@@ -1,4 +1,21 @@
-title: Custom Template
+title: BrainFuck part 10 - RPN calc tool
 plan:
 - title: Welcome
   statement: markdowns/welcome.md
+- title: Read integers
+  statement: markdowns/read_integers.md
+- title: First operators
+  statement: markdowns/first_ops.md
+- title: Print
+  statement: markdowns/print.md
+- title: Next operators
+  statement: markdowns/next_ops.md
+- title: Copy and drop
+  statement: markdowns/copy_drop.md
+- title: Rotate and swap
+  statement: markdowns/rot_swap.md
+- title: ASCII print
+  statement: markdowns/ascii.md
+- title: Final
+  statement: markdowns/final.md
+
