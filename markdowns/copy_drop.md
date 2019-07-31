@@ -28,9 +28,9 @@ Let's now add some new stack manipulation functions. Namely, copy (C) that dupli
   * subtract 2 (total 47), if char is null : it's division
     * reset else flag, divide the 2 operands
   * subtract 20 (total 67), if char is null : it's copy
-    * reset else flag, divide the 2 operands
+    * reset else flag, copy first operand
   * subtract 1 (total 68), if char is null : it's drop
-    * reset else flag, divide the 2 operands
+    * reset else flag, drop first operand
   * subtract **12** (total 80), if char is null : it's print
     * reset else flag, print first operand
   * otherwise
