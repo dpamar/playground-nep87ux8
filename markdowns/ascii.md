@@ -29,7 +29,7 @@ Note that, like P, this operator will not consume the first stacked value : it w
   * subtract 2 (total 47), if char is null : it's division
     * reset else flag, divide the 2 operands
   * subtract 18 (total 65), if char is null : it's ASCII print
-    * reset else flag, divide the 2 operands
+    * reset else flag, print first operand as char
   * subtract **2** (total 67), if char is null : it's copy
     * reset else flag, divide the 2 operands
   * subtract 1 (total 68), if char is null : it's drop
@@ -41,7 +41,7 @@ Note that, like P, this operator will not consume the first stacked value : it w
   * subtract 1 (total 83), if char is null : it's swap
     * reset else flag, swap first 2 operands
   * otherwise
-    * add **35** (to get the digit value)
+    * add 35 (to get the digit value)
     * add current number 10 times to current digit to get new current number
 * loop
 
@@ -102,7 +102,7 @@ Note that, like P, this operator will not consume the first stacked value : it w
     <<<[->+>+<<]        duplicate stack first value
     >>[-<<+>>]>         move duplicate back to original location
   ]<]>[-                next case: it's ASCII print
-    <<<.>++++++++++[-]> Print value as ASCII char and newline
+    <<<.>>              Print value as ASCII char
   ]<]>[-                next case: it's division
     <<<[->>>+<<<]<      move 2nd operand
     [->+>>+>-[<-]<[->>+ divide
@@ -140,6 +140,5 @@ Note that, like P, this operator will not consume the first stacked value : it w
 
 The program can be tested on its own.
 
-You can try with input `123 P C 47 A D 5 P C R / 61 A D P D 37 A D % P`
-
-This will print 123 / 5 = 24 % 3 (one block per line)
+You can try with input `123 P C 32 A 47 A D A 5 P S A 61 A D A D C R / P D 37 A D % P`
+This will print 123 / 5 = 24%3 (with some extra line breaks...)
